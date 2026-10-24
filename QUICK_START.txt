@@ -1,0 +1,60 @@
+GROUNDWORK SIMULATOR — LIVE TRAINER
+For Steam build 26171350 / 0.1.1-player, inspected 24 October 2026.
+
+ALL FOUR CONTROLS WORK ON THE RUNNING GAME
+1. Start Groundwork Simulator and load your local save.
+2. Open GroundworkTrainer.exe, then click Refresh.
+3. Choose your settings and click the corresponding Apply/Enable button.
+4. Use the Restore buttons to disable controls without closing the game.
+
+Python is not required. If Windows denies access, launch the trainer using
+Run as administrator. No changes are made when opening it or clicking Refresh.
+
+MONEY OVERRIDE
+Choose a spendable balance from EUR 0 to 2,000,000,000. The override controls
+the game's balance calculation used by the HUD and purchase/fuel checks.
+This is a temporary money override, not a permanent deposit.
+Purchases and expenses still accrue against your underlying real balance.
+Restoring normal balance or restarting reveals that balance, which may be
+lower or negative. The control does not clear debt or erase transactions.
+
+MACHINE FUEL
+Enable unlimited fuel to refill and hold the currently operated machine at
+100% while the simulation ticks. Switch machines to replenish other machines.
+Generator trailers and fuel trailers use separate systems and are excluded.
+Turning the control off restores normal consumption. Fuel already replenished
+remains in the tank and can be recorded by the game's normal save system.
+
+ENGINE POWER — HYDRAULICS
+Set the live hydraulic engine power limit from 50 to 300 kW. Restore normal
+power returns to the game's own current tuning and machine-specific limit.
+This targets the hydraulic engine simulation, not vehicle travel speed or
+the separate truck/loader drivetrains. Other mechanical limits still apply.
+
+WATER-PUMP CAPACITY
+Choose 100, 200, 300, 500 or 1000 L/s nominal capacity for all water pumps.
+Hoses, intake, priming, head and downstream demand still limit actual flow.
+Restore 100 L/s returns to the original calculation.
+
+RESTORING CONTROLS
+Restore all controls switches off every override while the game remains open.
+Closing the trainer leaves active controls in place. Restarting the game
+resets the patched calculations. Effects already produced in the world, fuel
+replenished and transactions recorded by the game are not undone by resetting.
+
+The trainer changes only the running process; it does not edit saves, settings
+or the installed executable. Each action checks the exact supported executable
+and the target instructions. Other builds or unknown patches are rejected.
+After an interrupted write, the trainer verifies recovery before resuming.
+If recovery cannot be verified, keep the trainer open and use the corresponding
+Restore button. The interface explains any required recovery action.
+
+VERIFICATION STATUS
+Native calculations and caller behaviour were inspected in this exact build.
+Read-only checks match the running game's original instructions/constants.
+Automated tests cover validation, mutation failures, rollback, instruction
+pointer checks, thread ownership and recovery. The Windows app is smoke-tested.
+Modified gameplay has NOT yet been tested. Controls are labelled experimental.
+Use with a local solo save; multiplayer behaviour has not been tested.
+
+This is an unofficial local tool, not a product of XYZ STUDIO.
